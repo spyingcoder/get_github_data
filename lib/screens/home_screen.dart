@@ -49,8 +49,8 @@ class _HomeState extends State<Home> {
             height: dHeight * 0.45,
             width: dWidth * 0.80,
             decoration: BoxDecoration(
-              // color: Colors.blue[900],
-              borderRadius: const BorderRadius.all(Radius.circular(20)),
+              borderRadius: BorderRadius.all(Radius.circular(10)),
+              color: Colors.blue[900],
               border: Border.all(color: Colors.white),
             ),
             child: Column(
@@ -91,6 +91,7 @@ class _HomeState extends State<Home> {
                       fontWeight: FontWeight.bold,
                     ),
                     decoration: const InputDecoration(
+                      enabled: true,
                       label: Text('Enter the Username'),
                       hintText: 'Enter your GitHub Username',
                       border: OutlineInputBorder(
